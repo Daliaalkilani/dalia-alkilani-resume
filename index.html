@@ -11,139 +11,175 @@
         box-sizing: border-box;
       }
       body {
-        font-family: Arial, sans-serif;
-        font-size: 11px;
-        color: #111;
-        background: #fff;
-        line-height: 1.5;
+        font-family: "Times New Roman", Times, Georgia, serif;
+        font-size: 11.5pt;
+        color: #000;
+        background: #f4f6f8;
+        line-height: 1.35;
+        padding: 20px 0;
       }
       .cv {
-        max-width: 780px;
-        margin: 20px auto;
-        padding: 32px 36px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 45px 50px;
+        background: #fff;
+        border: 1px solid #dcdcdc;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
       }
+      
+      /* Header & Contact */
       .header {
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
       }
       .header h1 {
-        font-size: 18px;
-        font-weight: 700;
+        font-size: 18pt;
+        font-weight: bold;
         letter-spacing: 0.5px;
         text-transform: uppercase;
+        margin-bottom: 6px;
       }
       .contact-line {
-        font-size: 10.5px;
-        color: #222;
-        margin-top: 4px;
+        font-size: 11pt;
+        color: #2b54d8;
       }
       .contact-line a {
-        color: #1a5276;
+        color: #2b54d8;
         text-decoration: none;
       }
       .contact-line a:hover {
         text-decoration: underline;
       }
+      .contact-line span.sep {
+        color: #333;
+        margin: 0 4px;
+      }
+
+      /* Dividers & Titles */
       hr {
         border: none;
-        border-top: 1.5px solid #111;
-        margin: 8px 0;
-      }
-      hr.thin {
-        border-top: 0.5px solid #aaa;
+        border-top: 1.5px solid #000;
+        margin: 10px 0;
       }
       .section-title {
         text-align: center;
-        font-size: 12px;
-        font-weight: 700;
-        margin: 10px 0 6px;
-        text-transform: uppercase;
+        font-size: 12pt;
+        font-weight: bold;
+        margin: 6px 0;
       }
       .role-title {
         text-align: center;
-        font-size: 13px;
-        font-weight: 700;
-        margin: 8px 0 6px;
+        font-size: 12.5pt;
+        font-weight: bold;
+        margin: 10px 0 8px;
       }
+
+      /* Summary */
       .summary {
-        font-size: 11px;
+        font-size: 11pt;
         color: #111;
-        margin-bottom: 8px;
+        text-align: justify;
+        margin-bottom: 10px;
       }
+
+      /* Core Competencies Table Layout */
       .competencies {
-        margin-bottom: 4px;
+        margin: 8px 0;
       }
       .comp-row {
         display: flex;
-        gap: 6px;
-        margin-bottom: 2px;
+        margin-bottom: 3px;
       }
       .comp-label {
-        font-weight: 700;
-        min-width: 160px;
-        font-size: 11px;
+        font-weight: bold;
+        width: 195px;
         flex-shrink: 0;
+        font-size: 11pt;
       }
       .comp-value {
-        font-size: 11px;
+        font-size: 11pt;
+        flex-grow: 1;
       }
+
+      /* Experience Section */
       .exp-block {
-        margin-bottom: 8px;
+        margin-bottom: 12px;
       }
       .exp-header {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        margin-bottom: 1px;
       }
       .exp-org {
-        font-weight: 700;
-        color: #1a5276;
-        font-size: 11px;
+        font-weight: bold;
+        color: #2b54d8;
+        font-size: 11.5pt;
       }
       .exp-date {
-        font-size: 11px;
-        font-weight: 700;
-        color: #111;
+        font-size: 11pt;
+        font-weight: bold;
+        color: #000;
         white-space: nowrap;
       }
       .exp-role {
-        font-weight: 700;
-        font-size: 11px;
-        margin-bottom: 2px;
+        font-weight: bold;
+        font-size: 11pt;
+        margin-bottom: 3px;
       }
+
+      /* Bullets */
       ul {
-        padding-left: 16px;
-        margin: 2px 0 4px;
+        padding-left: 22px;
+        margin: 3px 0 6px;
       }
       li {
         margin-bottom: 2px;
-        font-size: 11px;
+        font-size: 10.5pt;
+        line-height: 1.35;
       }
+
+      /* Projects */
       .project-block {
-        margin-bottom: 6px;
+        margin-bottom: 10px;
       }
       .project-name {
-        font-weight: 700;
-        font-size: 11px;
+        font-weight: bold;
+        font-size: 11pt;
+        color: #000;
       }
+
+      /* Education & Awards */
       .edu-line {
-        font-size: 11px;
+        font-size: 11pt;
       }
       .award-row {
         display: flex;
         justify-content: space-between;
-        font-size: 11px;
-        font-weight: 700;
-        padding: 4px 0;
-        border-bottom: 0.5px solid #ccc;
+        font-size: 11pt;
+        font-weight: bold;
+        padding: 3px 0;
+        border-bottom: 0.5px solid #ddd;
       }
       .award-row:last-child {
         border-bottom: none;
       }
       .lang-list {
         list-style: disc;
-        padding-left: 18px;
+        padding-left: 22px;
+      }
+
+      /* Print Optimization */
+      @media print {
+        body {
+          background: #fff;
+          padding: 0;
+        }
+        .cv {
+          box-shadow: none;
+          border: none;
+          padding: 0;
+          max-width: 100%;
+        }
       }
     </style>
   </head>
@@ -153,13 +189,13 @@
       <div class="header">
         <h1>DALIA ALKILANI</h1>
         <p class="contact-line">
-          +963949546996 &bull;
+          +963949546996 <span class="sep">|</span>
           <a href="mailto:daliaalkelani@gmail.com">daliaalkelani@gmail.com</a>
-          &bull; Syrian Arab Republic &bull;
+          <span class="sep">|</span> Syrian Arab Republic <span class="sep">|</span>
           <a href="https://www.linkedin.com/in/dalia-al-kilani/" target="_blank">LinkedIn</a>
-          &bull;
+          <span class="sep">|</span>
           <a href="https://github.com/Daliaalkilani" target="_blank">GitHub</a>
-          &bull;
+          <span class="sep">|</span>
           <a href="#" target="_blank">Portfolio</a>
         </p>
       </div>
@@ -175,7 +211,7 @@
       <!-- Core Competencies -->
       <hr />
       <div class="section-title">Core Competencies</div>
-      <hr class="thin" />
+      <hr />
 
       <div class="competencies">
         <div class="comp-row">
@@ -219,7 +255,7 @@
       <!-- Professional Experience -->
       <hr />
       <div class="section-title">Professional Experience</div>
-      <hr class="thin" />
+      <hr />
 
       <div class="exp-block">
         <div class="exp-header">
@@ -237,7 +273,7 @@
       <div class="exp-block">
         <div class="exp-header">
           <span class="exp-org">Sanad Youth Organization</span>
-          <span class="exp-date">Oct 2024 – Nov 2024</span>
+          <span class="exp-date">Oct 2024 - Nov 2024</span>
         </div>
         <div class="exp-role">Robotics Coach</div>
         <ul>
@@ -250,9 +286,9 @@
       <div class="exp-block">
         <div class="exp-header">
           <span class="exp-org">Sanad Youth Organization</span>
-          <span class="exp-date">Sep 2023 – Dec 2023</span>
+          <span class="exp-date">Sep 2023 - Dec 2023</span>
         </div>
-        <div class="exp-role">RFG Youth Robotics Competition — Team Member</div>
+        <div class="exp-role">RFG Youth Robotics Competition - Team Member</div>
         <ul>
           <li>Designed and built an embedded robotics prototype for pest detection, integrating microcontrollers and environmental sensors.</li>
           <li>Performed system-level debugging, optimized reliability, and validated performance through real-world testing.</li>
@@ -262,18 +298,18 @@
       <!-- Projects -->
       <hr />
       <div class="section-title">Projects</div>
-      <hr class="thin" />
+      <hr />
 
       <div class="project-block">
-        <span class="project-name">AI-Powered Arabic University Inquiry Classification &amp; Question Answering System</span>
+        <div class="project-name">AI-Powered Arabic University Inquiry Classification &amp; Question Answering System</div>
         <ul>
-          <li>Built an end-to-end Arabic NLP system for classifying university inquiries and retrieving answers, achieving 92.71% classification accuracy with AraBERTv2.</li>
+          <li>built an end-to-end Arabic NLP system for classifying university inquiries and retrieving answers, achieving 92.71% classification accuracy with AraBERTv2.</li>
           <li>Created and annotated a 2,000-sample Arabic dataset (MSA and Syrian dialect) and fine-tuned AraBERTv2, MARBERTv2, and ARBERTv2 with stratified 5-fold CV, early stopping, and Optuna; deployed a React frontend with Flask/SQLite backend and an extractive QA pipeline.</li>
         </ul>
       </div>
 
       <div class="project-block">
-        <span class="project-name">Bidirectional Arabic Sign Language Translator</span>
+        <div class="project-name">Bidirectional Arabic Sign Language Translator</div>
         <ul>
           <li>Developed a bidirectional Arabic Sign Language translation system enabling real-time communication between deaf and hearing users.</li>
           <li>Built a machine learning pipeline by creating and annotating a custom dataset of 50 sign classes, extracting hand landmarks with MediaPipe and OpenCV, and training gesture classification models.</li>
@@ -282,7 +318,7 @@
       </div>
 
       <div class="project-block">
-        <span class="project-name">Tasharok Platform</span>
+        <div class="project-name">Tasharok Platform</div>
         <ul>
           <li>Built a full-stack peer-to-peer marketplace MVP for renting, swapping, and donating community resources to validate product-market fit and user flows.</li>
           <li>Frontend: React and Tailwind CSS; Backend and APIs: Laravel (authentication and core marketplace logic).</li>
@@ -292,11 +328,11 @@
       <!-- Education -->
       <hr />
       <div class="section-title">Education</div>
-      <hr class="thin" />
+      <hr />
 
-      <div style="margin-bottom: 4px">
+      <div style="margin-bottom: 6px">
         <p class="edu-line">
-          <strong>Al-Wataniya Private University</strong>, B.Sc. in Computer Engineering, (GPA: 82% (3.10/4)), Oct 2021 – Jul 2026
+          <strong>Al-Wataniya Private University</strong>, B.Sc. in Computer Engineering, (GPA: 82% (3.10/4)), Oct 2021 - Jul 2026
         </p>
         <ul>
           <li>Relevant coursework: Natural Language Processing; Machine Learning; Embedded Systems.</li>
@@ -306,7 +342,7 @@
       <!-- Honors & Awards -->
       <hr />
       <div class="section-title">Honors &amp; Awards</div>
-      <hr class="thin" />
+      <hr />
 
       <div>
         <div class="award-row">
@@ -330,7 +366,7 @@
       <!-- Volunteering -->
       <hr />
       <div class="section-title">Volunteering</div>
-      <hr class="thin" />
+      <hr />
 
       <div class="exp-block">
         <div class="exp-header">
@@ -346,7 +382,7 @@
       <div class="exp-block">
         <div class="exp-header">
           <span class="exp-org">Clapital</span>
-          <span class="exp-date">Jan 2026 – Mar 2026</span>
+          <span class="exp-date">Jan 2026 - Mar 2026</span>
         </div>
         <div class="exp-role">AI Content Creator</div>
         <ul>
@@ -357,7 +393,7 @@
       <!-- Languages -->
       <hr />
       <div class="section-title">Languages</div>
-      <hr class="thin" />
+      <hr />
 
       <ul class="lang-list">
         <li>Arabic — Native</li>
