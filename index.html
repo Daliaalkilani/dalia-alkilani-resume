@@ -42,7 +42,13 @@
         font-weight: bold;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        margin-bottom: 6px;
+        margin-bottom: 4px;
+      }
+      .role-subtitle {
+        font-size: 12.5pt;
+        font-weight: bold;
+        color: #2b54d8;
+        margin-bottom: 8px;
       }
       .contact-line {
         font-size: 11pt;
@@ -75,12 +81,6 @@
         font-size: 12pt;
         font-weight: bold;
         margin: 6px 0;
-      }
-      .role-title {
-        text-align: center;
-        font-size: 12.5pt;
-        font-weight: bold;
-        margin: 10px 0 8px;
       }
 
       /* Summary */
@@ -189,10 +189,7 @@
           font-size: 10pt;
         }
         .contact-line span.sep {
-          display: none; /* Hide separators on small screens for better flow */
-        }
-        .contact-line item {
-          margin-bottom: 2px;
+          display: none;
         }
         .comp-row {
           flex-direction: column;
@@ -240,6 +237,7 @@
       <!-- Header -->
       <div class="header">
         <h1>DALIA ALKILANI</h1>
+        <div class="role-subtitle">AI / NLP Engineer</div>
         <div class="contact-line">
           <span>+963949546996</span>
           <span class="sep">|</span>
@@ -253,10 +251,8 @@
         </div>
       </div>
 
-      <hr />
-      <div class="role-title">AI / NLP Engineer</div>
-
       <!-- Professional Summary -->
+      <hr />
       <p class="summary">
         AI/NLP Engineer focused on Arabic Natural Language Processing and Transformer fine-tuning. Skilled in dataset creation, preprocessing, model evaluation, and deploying end-to-end NLP systems. Apply research-driven methods to build practical, scalable solutions for real-world Arabic-language problems.
       </p>
