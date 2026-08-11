@@ -15,17 +15,17 @@
       }
       body {
         font-family: "Times New Roman", Times, Georgia, serif;
-        font-size: 9.5pt;
-        color: #000;
+        font-size: 10.5pt;
+        color: #111111;
         background: #f4f6f8;
-        line-height: 1.2;
-        padding: 10px 0;
+        line-height: 1.35;
+        padding: 15px 0;
       }
       .cv {
-        max-width: 800px;
+        max-width: 820px;
         width: 100%;
         margin: 0 auto;
-        padding: 20px 30px;
+        padding: 25px 35px;
         background: #fff;
         border: 1px solid #dcdcdc;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -34,29 +34,29 @@
       /* Header & Contact */
       .header {
         text-align: center;
-        margin-bottom: 4px;
+        margin-bottom: 6px;
       }
       .header h1 {
-        font-size: 15pt;
+        font-size: 17pt;
         font-weight: bold;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        margin-bottom: 2px;
+        margin-bottom: 3px;
       }
       .role-subtitle {
-        font-size: 10.5pt;
+        font-size: 11.5pt;
         font-weight: bold;
-        color: #2b54d8;
-        margin-bottom: 4px;
+        color: #444444; /* لون رمادي غامق */
+        margin-bottom: 6px;
       }
       .contact-line {
-        font-size: 9pt;
+        font-size: 9.8pt;
         color: #2b54d8;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 5px;
+        gap: 6px;
       }
       .contact-line a, .exp-org a {
         color: #2b54d8;
@@ -72,47 +72,49 @@
       /* Dividers & Titles */
       hr {
         border: none;
-        border-top: 1px solid #000;
-        margin: 4px 0;
+        border-top: 1px solid #222;
+        margin: 6px 0;
       }
       .section-title {
         text-align: center;
-        font-size: 10pt;
+        font-size: 11pt;
         font-weight: bold;
         text-transform: uppercase;
-        margin: 2px 0;
+        margin: 3px 0;
+        letter-spacing: 0.3px;
       }
 
       /* Summary */
       .summary {
-        font-size: 9pt;
+        font-size: 10pt;
         color: #111;
         text-align: justify;
-        margin-bottom: 2px;
+        line-height: 1.35;
+        margin-bottom: 4px;
       }
 
-      /* Core Competencies Table Layout */
+      /* Core Competencies */
       .competencies {
-        margin: 3px 0;
+        margin: 4px 0;
       }
       .comp-row {
         display: flex;
-        margin-bottom: 1.5px;
+        margin-bottom: 3px;
       }
       .comp-label {
         font-weight: bold;
-        width: 170px;
+        width: 190px;
         flex-shrink: 0;
-        font-size: 9pt;
+        font-size: 10pt;
       }
       .comp-value {
-        font-size: 9pt;
+        font-size: 10pt;
         flex-grow: 1;
       }
 
       /* Experience Section */
       .exp-block {
-        margin-bottom: 4px;
+        margin-bottom: 6px;
       }
       .exp-header {
         display: flex;
@@ -122,58 +124,62 @@
       .exp-org {
         font-weight: bold;
         color: #2b54d8;
-        font-size: 9.5pt;
+        font-size: 10pt;
       }
       .exp-date {
-        font-size: 9pt;
+        font-size: 9.5pt;
         font-weight: bold;
-        color: #000;
+        color: #222;
         white-space: nowrap;
       }
       .exp-role {
         font-weight: bold;
-        font-size: 9pt;
-        margin-bottom: 1px;
+        font-size: 9.8pt;
+        margin-bottom: 2px;
       }
 
       /* Bullets */
       ul {
-        padding-left: 18px;
-        margin: 1px 0 2px;
+        padding-left: 20px;
+        margin: 2px 0 4px;
       }
       li {
-        margin-bottom: 1px;
-        font-size: 8.8pt;
-        line-height: 1.2;
+        margin-bottom: 2px;
+        font-size: 9.5pt;
+        line-height: 1.3;
       }
 
       /* Projects */
       .project-block {
-        margin-bottom: 4px;
+        margin-bottom: 6px;
       }
       .project-name {
         font-weight: bold;
-        font-size: 9.5pt;
+        font-size: 10pt;
         color: #000;
       }
 
-      /* Education & Awards */
+      /* Education */
       .edu-line {
-        font-size: 9pt;
+        font-size: 9.8pt;
+        line-height: 1.35;
       }
-      .award-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2px 15px;
-        font-size: 8.8pt;
+
+      /* Honors & Awards (Vertical Stack) */
+      .award-list {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        font-size: 9.5pt;
       }
       .award-item {
         display: flex;
         justify-content: space-between;
         font-weight: bold;
       }
+
       .lang-line {
-        font-size: 9pt;
+        font-size: 9.8pt;
       }
 
       /* Responsive Adjustments for Mobile Screens */
@@ -188,14 +194,14 @@
           box-shadow: none;
         }
         .contact-line {
-          font-size: 8.5pt;
+          font-size: 9pt;
         }
         .contact-line span.sep {
           display: none;
         }
         .comp-row {
           flex-direction: column;
-          margin-bottom: 4px;
+          margin-bottom: 5px;
         }
         .comp-label {
           width: 100%;
@@ -205,22 +211,18 @@
           align-items: flex-start;
         }
         .exp-date {
-          font-size: 8.5pt;
+          font-size: 9pt;
           color: #555;
-        }
-        .award-grid {
-          grid-template-columns: 1fr;
         }
       }
 
-      /* Print Optimization for Single A4 Page */
+      /* Print Optimization */
       @media print {
         @page {
           size: A4;
           margin: 0.8cm 1cm;
         }
         html, body {
-          height: 100%;
           background: #fff;
           padding: 0;
         }
@@ -381,20 +383,20 @@
       <div class="section-title">Honors &amp; Awards</div>
       <hr />
 
-      <div class="award-grid">
+      <div class="award-list">
         <div class="award-item">
           <span>3rd Place, Startup Weekend Hama</span>
           <span>Jan 2026</span>
         </div>
-        <div class="award-row award-item">
+        <div class="award-item">
           <span>2nd Place, RFG Teens Robotics Competition</span>
           <span>Nov 2024</span>
         </div>
-        <div class="award-row award-item">
+        <div class="award-item">
           <span>3rd Place, RFG Youth Robotics Competition</span>
           <span>Dec 2023</span>
         </div>
-        <div class="award-row award-item">
+        <div class="award-item">
           <span>Honorable Mention, ICPC Africa & Arab Girls</span>
           <span>Jul 2023</span>
         </div>
