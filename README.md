@@ -8,7 +8,7 @@ This repository contains my personal resume as a static HTML page, hosted via Gi
 ## 👩‍💻 About
 AI/NLP Engineer focused on Arabic transformer-based models, fine-tuning, and production deployment.
 
-**Skills:** Python · AraBERT · MARBERT · Hugging Face · FastAPI · OpenCV · Arduino
+**Skills:** Python · AraBERT · MARBERT · Hugging Face · Flask · OpenCV · Arduino
 
 ## 📬 Contact
 - Email: daliaalkelani@gmail.com
