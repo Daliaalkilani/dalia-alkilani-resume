@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dalia Alkilani — Resume</title>
     
+    <!-- Favicon Option 1: Embedded Inline SVG (Logo DA Blue) -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232b54d8'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-family='Georgia, serif' font-weight='bold' font-size='45' fill='white'>DA</text></svg>">
 
     <style>
@@ -15,17 +16,17 @@
       }
       body {
         font-family: "Times New Roman", Times, Georgia, serif;
-        font-size: 10.5pt;
-        color: #111111;
+        font-size: 11.5pt;
+        color: #000;
         background: #f4f6f8;
         line-height: 1.35;
-        padding: 15px 0;
+        padding: 20px 0;
       }
       .cv {
-        max-width: 820px;
+        max-width: 800px;
         width: 100%;
         margin: 0 auto;
-        padding: 25px 35px;
+        padding: 45px 50px;
         background: #fff;
         border: 1px solid #dcdcdc;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -34,23 +35,23 @@
       /* Header & Contact */
       .header {
         text-align: center;
-        margin-bottom: 6px;
+        margin-bottom: 12px;
       }
       .header h1 {
-        font-size: 17pt;
+        font-size: 18pt;
         font-weight: bold;
         letter-spacing: 0.5px;
         text-transform: uppercase;
-        margin-bottom: 3px;
+        margin-bottom: 4px;
       }
       .role-subtitle {
-        font-size: 11.5pt;
+        font-size: 12.5pt;
         font-weight: bold;
-        color: #444444; /* لون رمادي غامق */
-        margin-bottom: 6px;
+        color: #444444; /* رمادي غامق */
+        margin-bottom: 8px;
       }
       .contact-line {
-        font-size: 9.8pt;
+        font-size: 11pt;
         color: #2b54d8;
         display: flex;
         flex-wrap: wrap;
@@ -72,30 +73,27 @@
       /* Dividers & Titles */
       hr {
         border: none;
-        border-top: 1px solid #222;
-        margin: 6px 0;
+        border-top: 1.5px solid #000;
+        margin: 10px 0;
       }
       .section-title {
         text-align: center;
-        font-size: 11pt;
+        font-size: 12pt;
         font-weight: bold;
-        text-transform: uppercase;
-        margin: 3px 0;
-        letter-spacing: 0.3px;
+        margin: 6px 0;
       }
 
       /* Summary */
       .summary {
-        font-size: 10pt;
+        font-size: 11pt;
         color: #111;
         text-align: justify;
-        line-height: 1.35;
-        margin-bottom: 4px;
+        margin-bottom: 10px;
       }
 
-      /* Core Competencies */
+      /* Core Competencies Table Layout */
       .competencies {
-        margin: 4px 0;
+        margin: 8px 0;
       }
       .comp-row {
         display: flex;
@@ -103,18 +101,18 @@
       }
       .comp-label {
         font-weight: bold;
-        width: 190px;
+        width: 195px;
         flex-shrink: 0;
-        font-size: 10pt;
+        font-size: 11pt;
       }
       .comp-value {
-        font-size: 10pt;
+        font-size: 11pt;
         flex-grow: 1;
       }
 
       /* Experience Section */
       .exp-block {
-        margin-bottom: 6px;
+        margin-bottom: 12px;
       }
       .exp-header {
         display: flex;
@@ -124,62 +122,56 @@
       .exp-org {
         font-weight: bold;
         color: #2b54d8;
-        font-size: 10pt;
+        font-size: 11.5pt;
       }
       .exp-date {
-        font-size: 9.5pt;
+        font-size: 11pt;
         font-weight: bold;
-        color: #222;
+        color: #000;
         white-space: nowrap;
       }
       .exp-role {
         font-weight: bold;
-        font-size: 9.8pt;
-        margin-bottom: 2px;
+        font-size: 11pt;
+        margin-bottom: 3px;
       }
 
       /* Bullets */
       ul {
-        padding-left: 20px;
-        margin: 2px 0 4px;
+        padding-left: 22px;
+        margin: 3px 0 6px;
       }
       li {
         margin-bottom: 2px;
-        font-size: 9.5pt;
-        line-height: 1.3;
+        font-size: 10.5pt;
+        line-height: 1.35;
       }
 
       /* Projects */
       .project-block {
-        margin-bottom: 6px;
+        margin-bottom: 10px;
       }
       .project-name {
         font-weight: bold;
-        font-size: 10pt;
+        font-size: 11pt;
         color: #000;
       }
 
-      /* Education */
+      /* Education & Awards */
       .edu-line {
-        font-size: 9.8pt;
-        line-height: 1.35;
+        font-size: 11pt;
       }
-
-      /* Honors & Awards (Vertical Stack) */
-      .award-list {
-        display: flex;
-        flex-direction: column;
-        gap: 3px;
-        font-size: 9.5pt;
-      }
-      .award-item {
+      .award-row {
         display: flex;
         justify-content: space-between;
+        font-size: 11pt;
         font-weight: bold;
+        padding: 2px 0;
+        border: none;
       }
-
-      .lang-line {
-        font-size: 9.8pt;
+      .lang-list {
+        list-style: disc;
+        padding-left: 22px;
       }
 
       /* Responsive Adjustments for Mobile Screens */
@@ -189,40 +181,42 @@
           background: #fff;
         }
         .cv {
-          padding: 15px 12px;
+          padding: 20px 16px;
           border: none;
           box-shadow: none;
         }
         .contact-line {
-          font-size: 9pt;
+          font-size: 10pt;
         }
         .contact-line span.sep {
           display: none;
         }
         .comp-row {
           flex-direction: column;
-          margin-bottom: 5px;
+          margin-bottom: 8px;
         }
         .comp-label {
           width: 100%;
+          margin-bottom: 2px;
         }
         .exp-header {
           flex-direction: column;
           align-items: flex-start;
+          margin-bottom: 2px;
         }
         .exp-date {
-          font-size: 9pt;
+          font-size: 10pt;
           color: #555;
+        }
+        .award-row {
+          flex-direction: column;
+          margin-bottom: 6px;
         }
       }
 
       /* Print Optimization */
       @media print {
-        @page {
-          size: A4;
-          margin: 0.8cm 1cm;
-        }
-        html, body {
+        body {
           background: #fff;
           padding: 0;
         }
@@ -231,7 +225,6 @@
           border: none;
           padding: 0;
           max-width: 100%;
-          width: 100%;
         }
         .contact-line span.sep {
           display: inline;
@@ -273,24 +266,40 @@
 
       <div class="competencies">
         <div class="comp-row">
-          <span class="comp-label">Natural Language Processing:</span>
+          <span class="comp-label">Natural Language Processing</span>
           <span class="comp-value">Arabic NLP, Fine-tuning, Text classification, Transformer models</span>
         </div>
         <div class="comp-row">
-          <span class="comp-label">Machine Learning & Deployment:</span>
-          <span class="comp-value">Model evaluation, Model training, Supervised Learning, Flask, FastAPI</span>
+          <span class="comp-label">Machine Learning</span>
+          <span class="comp-value">Model evaluation, Model training, Supervised Learning, Transfer learning</span>
         </div>
         <div class="comp-row">
-          <span class="comp-label">Programming & Data Processing:</span>
-          <span class="comp-value">Python, C/C++, JavaScript, PHP, Data cleaning, Feature engineering, Pandas</span>
+          <span class="comp-label">Model Deployment</span>
+          <span class="comp-value">Flask, FastAPI</span>
         </div>
         <div class="comp-row">
-          <span class="comp-label">Vision & Embedded Systems:</span>
-          <span class="comp-value">MediaPipe, OpenCV, Real-time pipelines, Arduino, ESP32, Raspberry Pi</span>
+          <span class="comp-label">Programming</span>
+          <span class="comp-value">Python, C/C++, JavaScript, PHP</span>
         </div>
         <div class="comp-row">
-          <span class="comp-label">GenAI, Prompting & Mentoring:</span>
-          <span class="comp-value">AI content generation, Prompt engineering, Robotics Mentoring, Workshops</span>
+          <span class="comp-label">Data Processing</span>
+          <span class="comp-value">Data collection, Data cleaning, Feature engineering, Pandas</span>
+        </div>
+        <div class="comp-row">
+          <span class="comp-label">Computer Vision</span>
+          <span class="comp-value">MediaPipe, OpenCV, Real-time pipelines</span>
+        </div>
+        <div class="comp-row">
+          <span class="comp-label">Embedded Systems</span>
+          <span class="comp-value">Arduino, ESP32, Raspberry Pi, Sensor integration</span>
+        </div>
+        <div class="comp-row">
+          <span class="comp-label">Generative AI &amp; Prompting</span>
+          <span class="comp-value">AI-generated content, Prompt engineering, Video generation</span>
+        </div>
+        <div class="comp-row">
+          <span class="comp-label">Mentoring &amp; Training</span>
+          <span class="comp-value">Robotics Mentoring, Workshop Delivery</span>
         </div>
       </div>
 
@@ -309,7 +318,8 @@
         <div class="exp-role">Online Mentor</div>
         <ul>
           <li>Mentored teenagers in robotics fundamentals and competition preparation through virtual sessions.</li>
-          <li>Provided technical guidance on hardware/firmware troubleshooting and facilitated project problem-solving.</li>
+          <li>Provided technical guidance on hardware and firmware troubleshooting and facilitated project problem-solving.</li>
+          <li>Contributed to community robotics education initiatives to increase youth engagement.</li>
         </ul>
       </div>
 
@@ -322,7 +332,8 @@
         </div>
         <div class="exp-role">Robotics Coach</div>
         <ul>
-          <li>Implemented sensor integration and control systems using Arduino; mentored participants in embedded systems design.</li>
+          <li>Implemented sensor integration and control systems using Arduino for competition-ready robots.</li>
+          <li>Mentored participants in embedded systems design and firmware troubleshooting to improve team performance.</li>
           <li>Delivered hands-on workshops on system integration, testing, and competition readiness.</li>
         </ul>
       </div>
@@ -336,7 +347,8 @@
         </div>
         <div class="exp-role">RFG Youth Robotics Competition - Team Member</div>
         <ul>
-          <li>Designed and built an embedded robotics prototype for pest detection, integrating microcontrollers and sensors.</li>
+          <li>Designed and built an embedded robotics prototype for pest detection, integrating microcontrollers and environmental sensors.</li>
+          <li>Performed system-level debugging, optimized reliability, and validated performance through real-world testing.</li>
         </ul>
       </div>
 
@@ -348,22 +360,25 @@
       <div class="project-block">
         <div class="project-name">AI-Powered Arabic University Inquiry Classification &amp; Question Answering System</div>
         <ul>
-          <li>Built an end-to-end Arabic NLP system classifying inquiries with 92.71% accuracy using fine-tuned AraBERTv2.</li>
-          <li>Created a 2,000-sample Arabic dataset (MSA & Syrian dialect); fine-tuned models via Optuna & 5-fold CV; deployed React frontend with Flask/SQLite QA pipeline.</li>
+          <li>built an end-to-end Arabic NLP system for classifying university inquiries and retrieving answers, achieving 92.71% classification accuracy with AraBERTv2.</li>
+          <li>Created and annotated a 2,000-sample Arabic dataset (MSA and Syrian dialect) and fine-tuned AraBERTv2, MARBERTv2, and ARBERTv2 with stratified 5-fold CV, early stopping, and Optuna; deployed a React frontend with Flask/SQLite backend and an extractive QA pipeline.</li>
         </ul>
       </div>
 
       <div class="project-block">
         <div class="project-name">Bidirectional Arabic Sign Language Translator</div>
         <ul>
-          <li>Developed a real-time sign language translator; created 50-class dataset via MediaPipe/OpenCV, achieving 98% accuracy with speech/text integration.</li>
+          <li>Developed a bidirectional Arabic Sign Language translation system enabling real-time communication between deaf and hearing users.</li>
+          <li>Built a machine learning pipeline by creating and annotating a custom dataset of 50 sign classes, extracting hand landmarks with MediaPipe and OpenCV, and training gesture classification models.</li>
+          <li>Achieved 98% classification accuracy and integrated speech and text output for seamless two-way interaction.</li>
         </ul>
       </div>
 
       <div class="project-block">
         <div class="project-name">Tasharok Platform</div>
         <ul>
-          <li>Built a full-stack peer-to-peer resource sharing MVP (React, Tailwind CSS, Laravel).</li>
+          <li>Built a full-stack peer-to-peer marketplace MVP for renting, swapping, and donating community resources to validate product-market fit and user flows.</li>
+          <li>Frontend: React and Tailwind CSS; Backend and APIs: Laravel.</li>
         </ul>
       </div>
 
@@ -372,10 +387,13 @@
       <div class="section-title">Education</div>
       <hr />
 
-      <div>
+      <div style="margin-bottom: 6px">
         <p class="edu-line">
-          <strong>Al-Wataniya Private University</strong> — B.Sc. in Computer Engineering (Computer Science) | GPA: 82% (3.10/4) | Oct 2021 - Jul 2026
+          <strong>Al-Wataniya Private University</strong>, B.Sc. in Computer Engineering (Computer Science), (GPA: 82% (3.10/4)), Oct 2021 - Jul 2026
         </p>
+        <ul>
+          <li>Relevant coursework: Natural Language Processing; Machine Learning; Embedded Systems.</li>
+        </ul>
       </div>
 
       <!-- Honors & Awards -->
@@ -383,37 +401,63 @@
       <div class="section-title">Honors &amp; Awards</div>
       <hr />
 
-      <div class="award-list">
-        <div class="award-item">
+      <div>
+        <div class="award-row">
           <span>3rd Place, Startup Weekend Hama</span>
           <span>Jan 2026</span>
         </div>
-        <div class="award-item">
+        <div class="award-row">
           <span>2nd Place, RFG Teens Robotics Competition</span>
           <span>Nov 2024</span>
         </div>
-        <div class="award-item">
+        <div class="award-row">
           <span>3rd Place, RFG Youth Robotics Competition</span>
           <span>Dec 2023</span>
         </div>
-        <div class="award-item">
-          <span>Honorable Mention, ICPC Africa & Arab Girls</span>
+        <div class="award-row">
+          <span>Honorable Mention, ICPC Africa &amp; Arab Girls Contest</span>
           <span>Jul 2023</span>
         </div>
       </div>
 
-      <!-- Volunteering & Languages -->
+      <!-- Volunteering -->
       <hr />
-      <div class="section-title">Volunteering &amp; Languages</div>
+      <div class="section-title">Volunteering</div>
       <hr />
 
       <div class="exp-block">
+        <div class="exp-header">
+          <span class="exp-org">
+            <a href="https://www.linkedin.com/company/clapital/posts/?feedView=all" target="_blank">Clapital</a>
+          </span>
+          <span class="exp-date">Jan 2026 - Mar 2026</span>
+        </div>
+        <div class="exp-role">AI Content Creator</div>
         <ul>
-          <li><strong>Clapital (Jan 2026 - Mar 2026):</strong> AI Content Creator — Produced AI-generated short-form videos and optimized prompts.</li>
-          <li><strong>TechTide Expo (Oct 2024):</strong> Technical Support — Led live robotics demonstrations and explained technical concepts.</li>
-          <li class="lang-line"><strong>Languages:</strong> Arabic (Native), English (Professional Working Proficiency)</li>
+          <li>Produced AI-generated short-form video content and optimized prompts to align with marketing objectives.</li>
         </ul>
       </div>
+
+      <div class="exp-block">
+        <div class="exp-header">
+          <span class="exp-org">TechTide Expo</span>
+          <span class="exp-date">Oct 2024</span>
+        </div>
+        <div class="exp-role">Technical Support</div>
+        <ul>
+          <li>Led live robotics demonstrations and translated technical concepts to improve attendee engagement and hands-on learning.</li>
+        </ul>
+      </div>
+
+      <!-- Languages -->
+      <hr />
+      <div class="section-title">Languages</div>
+      <hr />
+
+      <ul class="lang-list">
+        <li>Arabic — Native</li>
+        <li>English — Professional Working Proficiency</li>
+      </ul>
     </main>
   </body>
 </html>
