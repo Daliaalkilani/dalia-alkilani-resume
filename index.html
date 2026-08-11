@@ -24,6 +24,7 @@
       }
       .cv {
         max-width: 800px;
+        width: 100%;
         margin: 0 auto;
         padding: 45px 50px;
         background: #fff;
@@ -46,6 +47,11 @@
       .contact-line {
         font-size: 11pt;
         color: #2b54d8;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
       }
       .contact-line a, .exp-org a {
         color: #2b54d8;
@@ -56,7 +62,6 @@
       }
       .contact-line span.sep {
         color: #333;
-        margin: 0 4px;
       }
 
       /* Dividers & Titles */
@@ -169,6 +174,49 @@
         padding-left: 22px;
       }
 
+      /* Responsive Adjustments for Mobile Screens */
+      @media screen and (max-width: 600px) {
+        body {
+          padding: 0;
+          background: #fff;
+        }
+        .cv {
+          padding: 20px 16px;
+          border: none;
+          box-shadow: none;
+        }
+        .contact-line {
+          font-size: 10pt;
+        }
+        .contact-line span.sep {
+          display: none; /* Hide separators on small screens for better flow */
+        }
+        .contact-line item {
+          margin-bottom: 2px;
+        }
+        .comp-row {
+          flex-direction: column;
+          margin-bottom: 8px;
+        }
+        .comp-label {
+          width: 100%;
+          margin-bottom: 2px;
+        }
+        .exp-header {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 2px;
+        }
+        .exp-date {
+          font-size: 10pt;
+          color: #555;
+        }
+        .award-row {
+          flex-direction: column;
+          margin-bottom: 6px;
+        }
+      }
+
       /* Print Optimization */
       @media print {
         body {
@@ -181,6 +229,9 @@
           padding: 0;
           max-width: 100%;
         }
+        .contact-line span.sep {
+          display: inline;
+        }
       }
     </style>
   </head>
@@ -189,8 +240,9 @@
       <!-- Header -->
       <div class="header">
         <h1>DALIA ALKILANI</h1>
-        <p class="contact-line">
-          +963949546996 <span class="sep">|</span>
+        <div class="contact-line">
+          <span>+963949546996</span>
+          <span class="sep">|</span>
           <a href="mailto:daliaalkelani@gmail.com">daliaalkelani@gmail.com</a>
           <span class="sep">|</span>
           <a href="https://www.linkedin.com/in/dalia-al-kilani/" target="_blank">LinkedIn</a>
@@ -198,7 +250,7 @@
           <a href="https://github.com/Daliaalkilani" target="_blank">GitHub</a>
           <span class="sep">|</span>
           <a href="https://daliaalkilani.github.io/Portfolio/" target="_blank">Portfolio</a>
-        </p>
+        </div>
       </div>
 
       <hr />
